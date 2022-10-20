@@ -1,0 +1,43 @@
+MIT License
+
+Copyright (c) 2022 Nico Zieten
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---------------------------------------------------------------------------
+ Portions of this software are redistributed under the following licenses:
+---------------------------------------------------------------------------
+
+Component name  : Newtonsoft.Json
+Used in         : Ziedden.Mysql.Parser class
+Copyright holder: James Newton-King
+License type    : MIT
+License URL     : https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md
+
+Component name  : MySql.Data.MySqlClient
+Used in         : Ziedden.Mysql.Parser class
+Copyright holder: Oracle
+License type    : GPLv2
+License URL     : https://downloads.mysql.com/docs/licenses/connector-net-8.0-gpl-en.pdf
+
+Component name  : DotNet
+Used in         : Ziedden.Mysql classes
+Copyright holder: Microsoft
+License type    : MIT
+License URL     : https://github.com/microsoft/dotnet/blob/main/LICENSE
