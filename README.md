@@ -71,7 +71,7 @@ Der Befehl Delete löscht einen Eintrag aus der Tabelle. Hier gibt es zwei mögl
 In diesen Fall wird mit der ID gearbeitet.
 
 ```csharp
-MySqlConnection connection = new MySqlConnection(ConnectionString);
+Ziedden.Mysql.Parser connection = new Ziedden.Mysql.Parser(ConnectionString);
 
 int userID = 5;
 connection.Delete(userID);
@@ -82,7 +82,7 @@ connection.Delete(userID);
 In diesen Fall wird ohne ID gearbeitet.
 
 ```csharp
-MySqlConnection connection = new MySqlConnection(ConnectionString);
+Ziedden.Mysql.Parser connection = new Ziedden.Mysql.Parser(ConnectionString);
 
 string Username = "Bsp";
 connection.Delte(typeof(User),new Ziedden.Mysql.Parser.Where[]  {new Ziedden.Mysql.Parser.Where("Username",Username)});
@@ -92,7 +92,7 @@ connection.Delte(typeof(User),new Ziedden.Mysql.Parser.Where[]  {new Ziedden.Mys
 Mit FindWhere kann man einen Eintrag mit dem passenden Daten suchen. Alles Einträge mit den passenden Daten werden als Array ausgegeben.
 
 ```csharp
-MySqlConnection connection = new MySqlConnection(ConnectionString);
+Ziedden.Mysql.Parser connection = new Ziedden.Mysql.Parser(ConnectionString);
 
 string Username = "Bsp";
 string Email = "Bsp@example.com";
@@ -102,7 +102,7 @@ User[] foundUser = connection.FindWhere<User>(new Ziedden.Mysql.Parser.Where[]  
 ## FindByID
 FindByID kann nur verwendet werden wenn die ID in der Klasse vorhanden ist (Siehe Bsp User).
 ```csharp
-MySqlConnection connection = new MySqlConnection(ConnectionString);
+Ziedden.Mysql.Parser connection = new Ziedden.Mysql.Parser(ConnectionString);
 
 int userID = 5;
 User foundUser = connection.FindByID<User>(userID);
@@ -116,7 +116,7 @@ Mit dem Befehl Update kann man Einträge bearbieten. Hier gibt es auch wieder zw
 In diesen Fall wird mit der ID gearbeitet.
 
 ```csharp
-MySqlConnection connection = new MySqlConnection(ConnectionString);
+Ziedden.Mysql.Parser connection = new Ziedden.Mysql.Parser(ConnectionString);
 
 int userID = 5;
 User foundUser = connection.FindByID(userID);
@@ -132,7 +132,7 @@ connection.Update(foundUser);
 In diesen Fall wird ohne ID gearbeitet.
 
 ```csharp
-MySqlConnection connection = new MySqlConnection(ConnectionString);
+Ziedden.Mysql.Parser connection = new Ziedden.Mysql.Parser(ConnectionString);
 
 string Username = "Bsp";
 User[] foundUsers = connection.FindWhere(new Ziedden.Mysql.Parser.Where[]  {new Ziedden.Mysql.Parser.Where("Username",Username)});
