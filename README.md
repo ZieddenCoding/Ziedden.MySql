@@ -17,12 +17,12 @@ Alles Daten die eingespeichert werden, werden im JSON vormat abgespeichert. Wenn
 ## Connection
 Als erstes muss die Connection erstellt werden.
 ```csharp
-  Ziedden.Mysql.Parser p = new VerwaltungServer.Mysql.Parser("Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;");
+  Ziedden.Mysql.Parser p = new Ziedden.Mysql.Parser("Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;");
 ```
 oder 
 
 ```csharp
-  Ziedden.Mysql.Parser p = new VerwaltungServer.Mysql.Parser("myServerAddress","myUsername","myPassword","myDataBase");
+  Ziedden.Mysql.Parser p = new Ziedden.Mysql.Parser("myServerAddress","myUsername","myPassword","myDataBase");
 ```
 ## Attribute
 Damit der Parser auch die Objecte erkennt müssen Attribute gesetzt werden z.B.:
