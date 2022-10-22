@@ -50,7 +50,7 @@ Die ID wird immer angelegt. Diese wird als fortlaufende Nummer verwendet.
 Der Insert Befehl ist um einen Eintrag zu tätigen. Ist keine Tabelle vorhanden so wird eine erstellt.
 Der MySql Tabellen Name wird vom Klassennamen abgeleitet. Ist der Rückgabewert -1 ist ein Fehler unterlaufen.
 ```csharp
-MySqlConnection connection = new MySqlConnection(ConnectionString);
+Ziedden.Mysql.Parser connection = new Ziedden.Mysql.Parser(ConnectionString);
 
 //Init Klass
 User newUser = new User();
